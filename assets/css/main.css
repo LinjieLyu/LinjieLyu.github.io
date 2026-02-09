@@ -1203,6 +1203,12 @@ input[type="radio"] + label:before {
     font-weight: 400; }
   .icon > .label {
     display: none; }
+  .icon > .label-visible {
+    display: inline-block;
+    margin-left: 0.25em;
+    font-weight: 700;
+    font-size: 0.9em;
+    vertical-align: middle; }
   .icon:before {
     line-height: inherit; }
   .icon.solid:before {
