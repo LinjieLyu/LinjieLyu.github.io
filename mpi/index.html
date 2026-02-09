@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Personal Homepage (MPI-INF)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal Homepage (MPI-INF)">
+<meta name="author" content="Researcher at MPI-INF">
+<!-- CSS imports -->
+<link rel="stylesheet" href="/css/bootstrap.min.css" >
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/mpi-inf.css">
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- JavaScript imports -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<!-- script type="text/javascript">var jq$ = jQuery.noConflict();</script -->
+</head>
+<body>
+<div class="container">
+  <!--#include virtual="/i/header.inc" -->
+  <div class="row clearfix">
+    <div class="col-md-12"> 
+      <!--#include virtual="/i/menutop.inc" -->
+      <div id="mpiideco">
+        <div class="col-md-2 col-xs-2">
+          <div id="department_symbol"><i class="fa fa-user"></i></div>
+        </div>
+        <div class="col-md-10 col-xs-10">
+          <div id="department_name">Homepage</div>
+        </div>
+      </div>
+      <!-- the breakcrump for better orientation within the navigational tree -->
+      <div id="mpiibreadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="//www.mpi-inf.mpg.de/">Home</a></li>
+          <li><a href="//www.mpi-inf.mpg.de/people/">People</a></li>
+          <li>Personal Homepage</li>
+        </ul>
+      </div>
+      <div id="mpiibody" class="col-md-12">
+        <div class="col-md-12" style="height:20px"></div>
+        <!-- Sidebar major content column on the right side of the navigation --> 
+        <!-- sidebar column navigation on the left -->
+        <div id="mpiinavleft" class="col-md-3 column">
+          <ul class="nav nav-stacked">
+            <!--#include virtual="menu.inc" -->
+          </ul>
+        </div>
+        
+        <!-- Sidebar major content column on the right side of the navigation -->
+        
+        <div id="mpiicontent" class="col-md-9 column">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Contact</h3>
+            </div>
+            <div class="panel-body">
+				
+              <!--#include virtual="personal.inc" -->
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="research">Research Interests</h3>
+            </div>
+            <div class="panel-body">
+              <ul>
+				<li>Computer Vision, Computer Graphics, Machine Learning </li>
+                <li>Differentiable rendering, Inverse rendering </li>
+				<li>Diffusion model based 2D/3D generation and editing </li>
+				<li>Uncertainty Quantification </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="publications">Publications</h3>
+            </div>
+            <div class="panel-body"> 
+			<!-- Intrinsic -->
+									<table style="margin-left:5px; margin-right: auto;" border="0">
+										<tr>
+											<td width="25%"><IMG style="width:95%;" src="images/2025-Intrinsic.png"></td>
+											<td>
+												<span style="font-size:1.2em"><link color="red"> <b>IntrinsicEdit: Precise generative image manipulation in intrinsic space</b></a></span>
+												</br></br>
+												<a href="https://people.mpi-inf.mpg.de/~llyu/" target="_blank"><b>Linjie Lyu</b></a>&#160;&#160;
+												<a href="https://valentin.deschaintre.fr/" target="_blank">Valentin Deschaintre</a>&#160;&#160;
+												<a href="https://yannickhold.com/" target="_blank">Yannick Hold-Geoffroy</a>&#160;&#160;
+												<a href="http://www.miloshasan.net/" target="_blank">Miloš Hašan</a>&#160;&#160;
+												<a href="https://gorokee.github.io/jsyoon/" target="_blank">Jae Shin Yoon</a>&#160;&#160;<br>
+												<a href="https://people.mpi-inf.mpg.de/~tleimkue/" target="_blank">Thomas Leimkühler</a>&#160;&#160;
+												<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>&#160;&#160; 
+												<a href="https://www.iliyan.com/" target="_blank">Iliyan Georgiev</a>&#160;&#160; 
+												</br></br>
+												<b>Siggraph 2025 <b style="color:rgb(255,0,0);">(TOG)</b></b>
+												</br></br>
+												<details>
+												  	<summary>Abstract</summary>
+													<div style="text-align:justify">
+													Generative diffusion models have advanced image editing with high-quality results and intuitive interfaces such as prompts and semantic drawing. However, these interfaces lack precise control, and the associated methods typically specialize on a single editing task. We introduce a versatile, generative workflow that operates in an intrinsic-image latent space, enabling semantic, local manipulation with pixel precision for a range of editing operations. Building atop the RGB-X diffusion framework, we address key challenges of identity preservation and intrinsic-channel entanglement. By incorporating exact diffusion inversion and disentangled channel manipulation, we enable precise, efficient editing with automatic resolution of global illumination effects -- all without additional data collection or model fine-tuning. We demonstrate state-of-the-art performance across a variety of tasks on complex images, including color and texture adjustments, object insertion and removal, global relighting, and their combinations.
+												</div>
+												</details>
+												</br>
+												[<a href="projects/2025-IntrinsicEdit/static/pdfs/main.pdf">pdf</a>],
+												[<a href="projects/2025-IntrinsicEdit/static/pdfs/suppl.pdf">Supplementary</a>],
+												[<a href="https://intrinsic-edit.github.io/">project page</a>],
+												[<a href="https://arxiv.org/abs/2505.08889">arxiv</a>],
+											    [<a href="https://github.com/LinjieLyu/Intrinsic-Edit">code</a>]
+											</td>
+										</tr>
+									</table>
+									
+									</br></br></br>
+			<!-- Uncertainty -->
+									<table style="margin-left:5px; margin-right: auto;" border="0">
+										<tr>
+											<td width="25%"><IMG style="width:95%;" src="images/2024-uncertainty.png"></td>
+											<td>
+												<span style="font-size:1.2em"><link color="red"> <b>Manifold Sampling for Differentiable Uncertainty in Radiance Fields</b></a></span>
+												</br></br>
+												<a href="https://people.mpi-inf.mpg.de/~llyu/" target="_blank"><b>Linjie Lyu</b></a>&#160;&#160;
+												<a href="https://ayushtewari.com/" target="_blank">Ayush Tewari</a>&#160;&#160;
+												<a href="http://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a>&#160;&#160;
+												<a href="https://shunsukesaito.github.io" target="_blank">Shunsuke Saito</a>&#160;&#160;
+												<a href="https://zollhoefer.com/" target="_blank">Michael Zollhoefer</a>&#160;&#160;<br>
+												<a href="https://people.mpi-inf.mpg.de/~tleimkue/" target="_blank">Thomas Leimkühler</a>&#160;&#160;
+												<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>&#160;&#160; 
+												</br></br>
+												<b>Siggraph Asia 2024</b>
+												</br></br>
+												<details>
+												  	<summary>Abstract</summary>
+													<div style="text-align:justify">
+													Radiance fields are powerful and, hence, popular models for representing the appearance of complex scenes. Yet, constructing them based on image observations gives rise to ambiguities and uncertainties.
+													We propose a versatile approach for learning Gaussian radiance fields with explicit and fine-grained uncertainty estimates that impose only little additional cost compared to uncertainty-agnostic training.
+													Our key observation is that uncertainties can be modeled as a low-dimensional manifold in the space of radiance field parameters that is highly amenable to Monte Carlo sampling.
+													Importantly, our uncertainties are differentiable and, thus, allow for gradient-based optimization of subsequent captures that optimally reduce ambiguities.
+													We demonstrate state-of-the-art performance on next-best-view planning tasks, including high-dimensional illumination planning for optimal radiance field relighting quality.
+													</div>
+												</details>
+												</br>
+												[<a href="https://vcai.mpi-inf.mpg.de/projects/2024-ManifoldUncertainty/papers/main_paper.pdf">pdf</a>],
+												[<a href="https://vcai.mpi-inf.mpg.de/projects/2024-ManifoldUncertainty/">video</a>],
+												[<a href="https://vcai.mpi-inf.mpg.de/projects/2024-ManifoldUncertainty/">project page</a>],
+												[<a href="https://arxiv.org/abs/2409.12661">arxiv</a>],
+											    [<a href="https://github.com/LinjieLyu/Manifold">code</a>]
+											</td>
+										</tr>
+									</table>
+									
+									</br></br></br>
+			<!-- DPE -->
+									<table style="margin-left:5px; margin-right: auto;" border="0">
+										<tr>
+											<td width="25%"><IMG style="width:95%;" src="images/2023-diffuselight.png"></td>
+											<td>
+												<span style="font-size:1.2em"><link color="red"> <b>Diffusion Posterior Illumination for Ambiguity-aware Inverse Rendering</b></a></span>
+												</br></br>
+												<a href="https://people.mpi-inf.mpg.de/~llyu/" target="_blank"><b>Linjie Lyu</b></a>&#160;&#160;
+												<a href="https://ayushtewari.com/" target="_blank">Ayush Tewari</a>&#160;&#160;
+												<a href="http://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a>&#160;&#160;
+												<a href="https://shunsukesaito.github.io" target="_blank">Shunsuke Saito</a>&#160;&#160;
+												<a href="https://zollhoefer.com/" target="_blank">Michael Zollhoefer</a>&#160;&#160;<br>
+												<a href="https://people.mpi-inf.mpg.de/~tleimkue/" target="_blank">Thomas Leimkühler</a>&#160;&#160;
+												<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>&#160;&#160; 
+												</br></br>
+												<b>Siggraph Asia 2023 <b style="color:rgb(255,0,0);">(TOG)</b></b>
+												</br></br>
+												<details>
+												  	<summary>Abstract</summary>
+													<div style="text-align:justify">
+													Inverse rendering, the process of inferring scene properties from images, is a challenging inverse problem. The task is ill-posed, as many different scene configurations can give rise to the same image. Most existing solutions incorporate priors into the inverse-rendering pipeline to encourage plausible solutions, but they do not consider the inherent ambiguities and the multi-modal distribution of possible decompositions. In this work, we propose a novel scheme that integrates a denoising diffusion probabilistic model pre-trained on natural illumination maps into an optimization framework involving a differentiable path tracer. The proposed method allows	sampling from combinations of illumination and spatially-varying surface materials that are, both, natural and explain the image observations. We further conduct an extensive comparative study of different priors on illumi- nation used in previous work on inverse rendering. Our method excels in recovering materials and producing highly realistic and diverse environment map samples that faithfully explain the illumination of the input images.
+													</div>
+												</details>
+												</br>
+												[<a href="https://vcai.mpi-inf.mpg.de/projects/2023-DPE/papers/main_paper.pdf">pdf</a>],
+												[<a href="https://vcai.mpi-inf.mpg.de/projects/2023-DPE/">video</a>],
+												[<a href="https://vcai.mpi-inf.mpg.de/projects/2023-DPE/">project page</a>],
+												[<a href="https://arxiv.org/abs/2310.00362">arxiv</a>],
+											    [<a href="https://github.com/LinjieLyu/DPI">code</a>]
+											</td>
+										</tr>
+									</table>
+									
+									</br></br></br>
+			  <!-- NRTF -->
+									<table style="margin-left:5px; margin-right: auto;" border="0">
+										<tr>
+											<td width="25%"><IMG style="width:95%;" src="images/2022-nrtf.png"></td>
+											<td>
+												<span style="font-size:1.2em"><link color="red"> <b>Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global Illumination</b></a></span>
+												</br></br>
+												<a href="http://people.mpi-inf.mpg.de/~llyu/" target="_blank"><b>Linjie Lyu</b></a>&#160;&#160;
+												<a href="https://ayushtewari.com/" target="_blank">Ayush Tewari</a>&#160;&#160;
+												<a href="https://people.mpi-inf.mpg.de/~tleimkue/" target="_blank">Thomas Leimkühler </a>&#160;&#160;
+												<a href="http://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a>&#160;&#160;
+										
+												
+												<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>&#160;&#160; 
+												</br></br>
+												<b>ECCV 2022 <b style="color:rgb(255,0,0);">(Oral)</b> </b> 
+												</br></br>
+												<details>
+													<summary>Abstract</summary>
+													<div style="text-align:justify">Given a set of images of a scene, the re-rendering of this scene from novel views and lighting conditions is an important and challenging problem in Computer Vision and Graphics. On the one hand, most existing works in Computer Vision usually impose many assumptions regarding the image formation process, e.g. direct illumination and predefined materials, to make scene parameter estimation tractable. On the other hand, mature Computer Graphics tools allow modeling of complex photo-realistic light transport given all the scene parameters. Combining these approaches, we propose a method for scene relighting under novel views by learning a neural precomputed radiance transfer function, which implicitly handles global illumination effects using novel environment maps. Our method can be solely supervised on a set of real images of the scene under a single unknown lighting condition. To disambiguate the task during training, we tightly integrate a differentiable path tracer in the training process and propose a combination of a synthesized OLAT and a real image loss. Results show that the recovered disentanglement of scene parameters improves significantly over the current state of the art and, thus, also our re-rendering results are more realistic and accurate.
+												</details>
+												</br></br>
+												[<a href="https://people.mpi-inf.mpg.de/~llyu/projects/2022-NRTF/data/paper.pdf">pdf</a>],
+												[<a href="https://people.mpi-inf.mpg.de/~llyu/projects/2022-NRTF/data/video.mp4">video</a>],												
+												[<a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2022-NRTF/index.htm">project page</a>],											
+												[<a href="https://arxiv.org/abs/2207.13607">arxiv</a>],		
+												[<a href="https://github.com/LinjieLyu/NRTF">code</a>]											
+											</td>
+										</tr>
+									</table>
+									
+									</br></br></br>
+              <!-- Diff Shadow -->
+									<table style="margin-left:5px; margin-right: auto;" border="0">
+										<tr>
+											<td width="25%"><IMG style="width:95%;" src="images/teaserdiffshadow.png"></td>
+											<td>
+												<span style="font-size:1.2em"><link color="red"> <b>Efficient and Differentiable Shadow Computation for Inverse Problems</b></a></span>
+												</br></br>
+												<a href="http://people.mpi-inf.mpg.de/~llyu/" target="_blank"><b>Linjie Lyu</b></a>&#160;&#160;
+												<a href="http://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a>&#160;&#160;
+												<a href="https://lingjie0206.github.io" target="_blank">Lingjie Liu</a>&#160;&#160;
+												<a href="https://people.mpi-inf.mpg.de/~mbr/" target="_blank">Mallikarjun B R</a>&#160;&#160;
+												<a href="https://ayushtewari.com/" target="_blank">Ayush Tewari</a>&#160;&#160;<br>
+												<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>&#160;&#160; 
+												</br></br>
+												<b>ICCV 2021</b>
+												</br></br>
+												<details>
+													<summary>Abstract</summary>
+													<div style="text-align:justify">Differentiable rendering has received increasing interest for image-based inverse problems. It can benefit traditional optimization-based solutions to inverse problems, but also allows for self-supervision of learning-based approaches for which training data with ground truth annotation is hard to obtain. However, existing differentiable renderers either do not model visibility of the light sources from the different points in the scene, responsible for shadows in the images, or are too slow for being used to train deep architectures over thousands of iterations. To this end, we propose an accurate yet efficient approach for differentiable visibility and soft shadow computation. Our approach is based on the spherical harmonics approximations of the scene illumination and visibility, where the occluding surface is approximated with spheres. This allows for a significantly more efficient shadow computation compared to methods based on ray tracing. As our formulation is differentiable, it can be used to solve inverse problems such as texture, illumination, rigid pose, and geometric deformation recovery from images using analysis-by-synthesis optimization.</div>
+												</details>
+												</br></br>
+												[<a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2021-diffshadow/data/paper.pdf">pdf</a>],
+												[<a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2021-diffshadow/data/video.mp4">video</a>],
+												[<a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2021-diffshadow/">project page</a>],
+												[<a href="http://arxiv.org/abs/2104.00359">arxiv</a>]											
+											</td>
+										</tr>
+									</table>
+									</br></br></br>
+			<!-- Renderer -->
+									<table style="margin-left:5px; margin-right: auto;" border="0">
+										<tr>
+											<td width="25%"><IMG style="width:95%;" src="images/teaserRender.png"></td>
+											<td>
+												<span style="font-size:1.2em"><link color="red"> <b>Differentiable Rendering Tool</b></a></span>
+												</br></br>
+												<a href="http://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a>&#160;&#160;
+												<a href="https://people.mpi-inf.mpg.de/~mbr/" target="_blank">Mallikarjun B R</a>&#160;&#160;
+												<a href="https://ayushtewari.com/" target="_blank">Ayush Tewari</a>&#160;&#160;
+												<a href="" target="http://people.mpi-inf.mpg.de/~llyu/"><b>Linjie Lyu</b></a>&#160;&#160;
+												<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a>
+												</br></br>
+												<b>Github</b>
+												</br></br>
+												<details>
+												  	<summary>Abstract</summary>
+													This is a simple and efficient differentiable rasterization-based renderer which has been used in several GVV publications. The implementation is free of most third-party libraries such as OpenGL. The core implementation is in CUDA and C++. We use the layer as a custom Tensorflow op.
+													The renderer supports the following features:
+													<ul>
+													<li>Shading based on spherical harmonics illumination. This shading model is differentiable with respect to geometry, texture, and lighting.</li>
+													<li>Different visualizations, such as normals, UV coordinates, phong-shaded surface, spherical-harmonics shading and colors without shading.</li>
+													<li>Texture map lookups.</li>
+													<li>Rendering from multiple camera views in a single batch</li>
+													</ul>
+												</details>
+												</br>
+												[<a href="https://github.com/aytewari/GVV-Differentiable-CUDA-Renderer">Github</a>]										
+											</td>
+										</tr>
+									</table>
+									
+									</br></br></br>
+            </div>
+          </div>
+       
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="education">Education</h3>
+            </div>
+            <div class="panel-body"> 
+              <!-- put the most recent entries on top of your list -->
+              <ul>
+                <li> June 2021 - present:<br />
+                  Ph. D. student in <a href="http://www.cs.uni-saarland.de">Computer Science</a> at the <a href="http://www.uni-saarland.de">Universit&auml;t
+                  des Saarlandes, Saarbr&uuml;cken</a>, Germany and the <a href="http://www.mpi-inf.mpg.de">Max-Planck-Institut f&uuml;r Informatik</a><br />
+                  <br />
+                </li>
+				<li> October 2019 - March 2021<br />
+                  Graduate school student in <a href="http://www.cs.uni-saarland.de">Computer Science</a> at the <a href="http://www.uni-saarland.de">Universit&auml;t
+                  des Saarlandes, Saarbr&uuml;cken</a>, Germany</a><br />
+                  <br />
+                </li>
+				<li> September 2015 - July 2019<br />
+                  Bachelor Student in Physics and Mathematics</a> at the <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a><br />
+                  <br />
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+         
+            
+          </div>
+        </div>
+      </div>
+      <!--#include virtual="footer.inc" -->
+    </div>
+  </div>
+</div>
+</body>
+</html>

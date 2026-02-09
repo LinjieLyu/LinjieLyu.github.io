@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global Illumination </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Meta tags for Zotero grab citation -->
+	<meta name="citation_title" content="Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global Illumination">
+	<meta name="citation_author" content="Lyu, Linjie">
+	<meta name="citation_author" content="Tewari, Ayush">
+	<meta name="citation_author" content="Leimkühler,Thomas">	
+	<meta name="citation_author" content="Habermann, Marc">	
+	<meta name="citation_author" content="Theobalt, Christian">
+	<meta name="citation_pdf_url" content="https://people.mpi-inf.mpg.de/~mhaberma/projects/2020-cvpr-deepcap/data/deepcap.pdf">
+
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="
+		Given a set of images of a scene, the re-rendering of this scene from novel views and lighting conditions is an important and challenging problem in Computer Vision and Graphics. On the one hand, most existing works in Computer Vision usually impose many assumptions regarding the image formation process, e.g. direct illumination and predefined materials, to make scene parameter estimation tractable. On the other hand, mature Computer Graphics tools allow modeling of complex photo-realistic light transport given all the scene parameters. Combining these approaches, we propose a method for scene relighting under novel views by learning a neural precomputed radiance transfer function, which implicitly handles global illumination effects using novel environment maps. Our method can be solely supervised on a set of real images of the scene under a single unknown lighting condition. To disambiguate the task during training, we tightly integrate a differentiable path tracer in the training process and propose a combination of a synthesized OLAT and a real image loss. Results show that the recovered disentanglement of scene parameters improves significantly over the current state of the art and, thus, also our re-rendering results are more realistic and accurate.
+	<link rel="author" href="http://people.mpi-inf.mpg.de/~llyu/"/>
+
+	<!-- Fonts and stuff -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/project.css" media="screen" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
+	<script src="js/google-code-prettify/prettify.js"></script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="content-inner">
+			<div class="section logos"  style="text-align:center">
+			    <a href="https://eccv2022.ecva.net//" target="_blank"><img src="images/ECCV2022.png" height="60"></a>
+				<a href="http://gvv.mpi-inf.mpg.de/" target="_blank"><img src="images/gvv-logo.png" height="60"></a>
+				<a href="http://www.mpi-inf.mpg.de/" target="_blank"><img src="images/mpii-logo.png" height="60"></a>
+				<a href="https://www.mit.edu/" target="_blank"><img src="images/MIT-logo.png" height="60"></a>
+			</div>
+
+			<div class="section head">
+				<h1>Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global Illumination </h1>
+				<h1>(ECCV 2022 Oral)</h1>
+				<div class="authors">
+					<a href="http://people.mpi-inf.mpg.de/~llyu/" target="_blank">Linjie Lyu</a><sup>1</sup>&#160;&#160;
+					<a href="https://people.mpi-inf.mpg.de/~atewari/" target="_blank">Ayush Tewari</a><sup>2</sup>&#160;&#160;
+					<a href="https://people.mpi-inf.mpg.de/~tleimkue/" target="_blank">Thomas Leimkühler</a><sup>1</sup>&#160;&#160;
+					<a href="http://people.mpi-inf.mpg.de/~mhaberma/" target="_blank">Marc Habermann</a><sup>1</sup>&#160;&#160;	
+					<a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a><sup>1</sup>
+				</div>
+
+				<div class="affiliations">
+					<sup>1</sup><a href="http://www.mpi-inf.mpg.de/" target="_blank">Max Planck Institute for Informatics,Saarland Informatics Campus </a> &#160;&#160;
+					<sup>2</sup><a href="https://www.mit.edu/" target="_blank">MIT</a>&#160;&#160;
+				</div>
+			</div>
+
+			<div class="section teaser">
+				<iframe width="640" height="360" src="data/pre.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<p style="font-size:11px; text-align:center">
+				  Download Video: <a href="data/pre.mp4" target="_blank">HD</a> (MP4, 46 MB)
+				</p>
+			</div>
+	
+
+			<div class="section abstract">
+				<h2>Abstract</h2>
+				<p>
+					Given a set of images of a scene, the re-rendering of this scene from novel views and lighting conditions is an important and challenging problem in Computer Vision and Graphics. On the one hand, most existing works in Computer Vision usually impose many assumptions regarding the image formation process, e.g. direct illumination and predefined materials, to make scene parameter estimation tractable. On the other hand, mature Computer Graphics tools allow modeling of complex photo-realistic light transport given all the scene parameters. Combining these approaches, we propose a method for scene relighting under novel views by learning a neural precomputed radiance transfer function, which implicitly handles global illumination effects using novel environment maps. Our method can be solely supervised on a set of real images of the scene under a single unknown lighting condition. To disambiguate the task during training, we tightly integrate a differentiable path tracer in the training process and propose a combination of a synthesized OLAT and a real image loss. Results show that the recovered disentanglement of scene parameters improves significantly over the current state of the art and, thus, also our re-rendering results are more realistic and accurate.
+			</div>
+
+			<div class="section downloads">
+				<h2>Downloads</h2>
+				<center>
+				<ul>
+					<li class="grid">
+						<div class = "griditem">
+							<a href="data/paper.pdf" target="_blank" class="imageLink"><img src = "images/pdf.png"></a><br/>
+							Paper<br/>
+							<a href="data/paper.pdf" target="_blank">PDF</a>
+						</div>
+					</li>
+					<li class="grid">
+						<div class = "griditem">
+							<a href="data/supp.pdf" target="_blank" class="imageLink"><img src = "images/pdf.png"></a><br/>
+							Supplemental document<br/>
+							<a href="data/supp.pdf" target="_blank">PDF</a>
+						</div>
+					</li>
+					<li class="grid"> 
+						<div class = "griditem"> 
+						<a href="data/pre.mp4" target="_blank" class="imageLink"><img src = "images/mp4.png"></a><br />
+						Main video<br /> 
+						<a href="data/pre.mp4" target="_blank">MP4</a>
+						<br/> 
+						</div>
+					</li>
+					<li class="grid"> 
+						<div class = "griditem"> 
+						<a href="https://github.com/LinjieLyu/NRTF" target="_blank" class="imageLink"><img src = "images/data.jpg"></a><br />
+						Code<br /> 
+						<a href="https://github.com/LinjieLyu/NRTF" target="_blank">Link</a>
+						<br/> 
+						</div>
+					</li>
+				</ul>
+				</center>
+			</div>
+			<br />
+			<br />
+			
+			
+			<div class="section Q&A">
+				<h2>Frequent Q&A</h2>	
+				<p>
+				<strong>Q:</strong> Why using spatially-constant specularity in the material estimation stage instead of spatially-varying BRDF?<br />
+				
+				<strong>A:</strong>
+				
+				We investigate the quality of material estimation from multi-view images with a spatially-varying specularity model, using the state-of-the-art differentiable path tracer <a href="https://www.mitsuba-renderer.org/" target="_blank">Mitsuba 3</a>, and obtain the following relighting result.
+				We still observe very strong artifacts in the form of mid-frequency noise as well as incorrectly recovered reflections of the engine on the wings, as is evident from the 360-video below. We find that this is a common type of artifact for non-convex glossy objects with strong (higher-order) reflections -- the same artifacts that led us to develop our NRTF algorithm, which successfully addresses these problems. 
+				</p>
+				<p align="center"><iframe width="480" height="360" src="data/plane_opt_360.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+
+				<p style="font-size:11px; text-align:center">
+				  <a href="https://www.mitsuba-renderer.org/" target="_blank">Mitsuba 3</a> optimization and relighting with spatially-varying specularity
+				</p>
+				<br />
+				</div>
+			
+			
+			<div class="section list">
+				<h2>Citation</h2>
+				
+				<div class="section bibtex">
+					<pre>
+@inproceedings{lyu2022nrtf,
+title = {Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global Illumination},
+author = {Lyu, Linjie and Tewari, Ayush and Leimkuehler, Thomas and Habermann, Marc and Theobalt, Christian},
+year = {2022},
+booktitle={ECCV},
+}
+				</div>
+			</div>
+
+
+			<div class="section contact">
+				<h2>Contact</h2>
+				For questions, clarifications, please get in touch with:<br />
+				Linjie Lyu<br /><a href='mailt&#111;&#58;llyu&#64;&#109;p&#105;&#45;inf&#46;%6D&#37;&#55;0%67&#46;&#100;e'>llyu&#64;mp&#105;-inf&#46;mp&#103;&#46;&#100;e</a>  
+			</div>
+
+			<div class="section">
+				<hr class="smooth">
+				This page is <a href="http://www.zotero.org" target="_blank">Zotero</a> translator friendly. Page last updated 
+				<script type="text/javascript">
+					var m = "This page was last updated: " + document.lastModified;
+					var p = m.length-9;
+					document.writeln("<left>");
+					document.write(m.substring(p, 0) + ".");
+					document.writeln("</left>");
+				</script>
+				<a href="https://www.mpi-inf.mpg.de/imprint/">Imprint</a>. <a href="https://data-protection.mpi-klsb.mpg.de/inf/gvv.mpi-inf.mpg.de/projects/">Data Protection</a>.
+			</div>
+		</div>
+	</div>
+</body>
+</html>

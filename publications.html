@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Publications | Linjie Lyu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Linjie Lyu</strong> Personal Website</a>
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/in/linjie-lyu-0b0715312/"
+                                class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="LinjieLyu-CV.pdf" class="icon solid fa-file-pdf"><span class="label">CV</span></a>
+                        </li>
+                    </ul>
+                </header>
+
+                <!-- Content -->
+                <section>
+                    <header class="main">
+                        <h1>Publications</h1>
+                    </header>
+
+                    <!-- IntrinsicEdit -->
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/publications/2025-Intrinsic.png" alt="" /></span>
+                        </div>
+                        <div class="col-8 col-12-small">
+                            <h3>IntrinsicEdit: Precise generative image manipulation in intrinsic space</h3>
+                            <p>
+                                <strong>Linjie Lyu</strong>, Valentin Deschaintre, Yannick Hold-Geoffroy, Miloš Hašan,
+                                Jae Shin Yoon, Thomas Leimkühler, Christian Theobalt, Iliyan Georgiev<br />
+                                <em>Siggraph 2025 (TOG)</em>
+                            </p>
+                            <details>
+                                <summary>Abstract</summary>
+                                <p>Generative diffusion models have advanced image editing with high-quality results and
+                                    intuitive interfaces such as prompts and semantic drawing. However, these interfaces
+                                    lack precise control, and the associated methods typically specialize on a single
+                                    editing task. We introduce a versatile, generative workflow that operates in an
+                                    intrinsic-image latent space, enabling semantic, local manipulation with pixel
+                                    precision for a range of editing operations. Building atop the RGB-X diffusion
+                                    framework, we address key challenges of identity preservation and intrinsic-channel
+                                    entanglement. By incorporating exact diffusion inversion and disentangled channel
+                                    manipulation, we enable precise, efficient editing with automatic resolution of
+                                    global illumination effects -- all without additional data collection or model
+                                    fine-tuning. We demonstrate state-of-the-art performance across a variety of tasks
+                                    on complex images, including color and texture adjustments, object insertion and
+                                    removal, global relighting, and their combinations.</p>
+                            </details>
+                            <ul class="actions small">
+                                <li><a href="projects/2025-IntrinsicEdit/static/pdfs/main.pdf"
+                                        class="button small">PDF</a></li>
+                                <li><a href="https://intrinsic-edit.github.io/" class="button small">Project Page</a>
+                                </li>
+                                <li><a href="https://arxiv.org/abs/2505.08889" class="button small">arXiv</a></li>
+                                <li><a href="https://github.com/LinjieLyu/Intrinsic-Edit" class="button small">Code</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="major" />
+
+                    <!-- Manifold Sampling -->
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/publications/2024-uncertainty.png" alt="" /></span>
+                        </div>
+                        <div class="col-8 col-12-small">
+                            <h3>Manifold Sampling for Differentiable Uncertainty in Radiance Fields</h3>
+                            <p>
+                                <strong>Linjie Lyu</strong>, Ayush Tewari, Marc Habermann, Shunsuke Saito, Michael
+                                Zollhoefer, Thomas Leimkühler, Christian Theobalt<br />
+                                <em>Siggraph Asia 2024</em>
+                            </p>
+                            <details>
+                                <summary>Abstract</summary>
+                                <p>Radiance fields are powerful and, hence, popular models for representing the
+                                    appearance of complex scenes. Yet, constructing them based on image observations
+                                    gives rise to ambiguities and uncertainties. We propose a versatile approach for
+                                    learning Gaussian radiance fields with explicit and fine-grained uncertainty
+                                    estimates that impose only little additional cost compared to uncertainty-agnostic
+                                    training. Our key observation is that uncertainties can be modeled as a
+                                    low-dimensional manifold in the space of radiance field parameters that is highly
+                                    amenable to Monte Carlo sampling. Importantly, our uncertainties are differentiable
+                                    and, thus, allow for gradient-based optimization of subsequent captures that
+                                    optimally reduce ambiguities. We demonstrate state-of-the-art performance on
+                                    next-best-view planning tasks, including high-dimensional illumination planning for
+                                    optimal radiance field relighting quality.</p>
+                            </details>
+                            <ul class="actions small">
+                                <li><a href="https://vcai.mpi-inf.mpg.de/projects/2024-ManifoldUncertainty/papers/main_paper.pdf"
+                                        class="button small">PDF</a></li>
+                                <li><a href="https://vcai.mpi-inf.mpg.de/projects/2024-ManifoldUncertainty/"
+                                        class="button small">Project Page</a></li>
+                                <li><a href="https://arxiv.org/abs/2409.12661" class="button small">arXiv</a></li>
+                                <li><a href="https://github.com/LinjieLyu/Manifold" class="button small">Code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="major" />
+
+                    <!-- Diffusion Posterior Illumination -->
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/publications/2023-diffuselight.png"
+                                    alt="" /></span>
+                        </div>
+                        <div class="col-8 col-12-small">
+                            <h3>Diffusion Posterior Illumination for Ambiguity-aware Inverse Rendering</h3>
+                            <p>
+                                <strong>Linjie Lyu</strong>, Ayush Tewari, Marc Habermann, Shunsuke Saito, Michael
+                                Zollhoefer, Thomas Leimkühler, Christian Theobalt<br />
+                                <em>Siggraph Asia 2023 (TOG)</em>
+                            </p>
+                            <details>
+                                <summary>Abstract</summary>
+                                <p>Inverse rendering, the process of inferring scene properties from images, is a
+                                    challenging inverse problem. The task is ill-posed, as many different scene
+                                    configurations can give rise to the same image. Most existing solutions incorporate
+                                    priors into the inverse-rendering pipeline to encourage plausible solutions, but
+                                    they do not consider the inherent ambiguities and the multi-modal distribution of
+                                    possible decompositions. In this work, we propose a novel scheme that integrates a
+                                    denoising diffusion probabilistic model pre-trained on natural illumination maps
+                                    into an optimization framework involving a differentiable path tracer. The proposed
+                                    method allows sampling from combinations of illumination and spatially-varying
+                                    surface materials that are, both, natural and explain the image observations. We
+                                    further conduct an extensive comparative study of different priors on illumination
+                                    used in previous work on inverse rendering. Our method excels in recovering
+                                    materials and producing highly realistic and diverse environment map samples that
+                                    faithfully explain the illumination of the input images.</p>
+                            </details>
+                            <ul class="actions small">
+                                <li><a href="https://vcai.mpi-inf.mpg.de/projects/2023-DPE/papers/main_paper.pdf"
+                                        class="button small">PDF</a></li>
+                                <li><a href="https://vcai.mpi-inf.mpg.de/projects/2023-DPE/"
+                                        class="button small">Project Page</a></li>
+                                <li><a href="https://arxiv.org/abs/2310.00362" class="button small">arXiv</a></li>
+                                <li><a href="https://github.com/LinjieLyu/DPI" class="button small">Code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="major" />
+
+                    <!-- Neural Radiance Transfer Fields -->
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/publications/2022-nrtf.png" alt="" /></span>
+                        </div>
+                        <div class="col-8 col-12-small">
+                            <h3>Neural Radiance Transfer Fields for Relightable Novel-view Synthesis with Global
+                                Illumination</h3>
+                            <p>
+                                <strong>Linjie Lyu</strong>, Ayush Tewari, Thomas Leimkühler, Marc Habermann, Christian
+                                Theobalt<br />
+                                <em>ECCV 2022 (Oral)</em>
+                            </p>
+                            <details>
+                                <summary>Abstract</summary>
+                                <p>Given a set of images of a scene, the re-rendering of this scene from novel views and
+                                    lighting conditions is an important and challenging problem in Computer Vision and
+                                    Graphics. On the one hand, most existing works in Computer Vision usually impose
+                                    many assumptions regarding the image formation process, e.g. direct illumination and
+                                    predefined materials, to make scene parameter estimation tractable. On the other
+                                    hand, mature Computer Graphics tools allow modeling of complex photo-realistic light
+                                    transport given all the scene parameters. Combining these approaches, we propose a
+                                    method for scene relighting under novel views by learning a neural precomputed
+                                    radiance transfer function, which implicitly handles global illumination effects
+                                    using novel environment maps. Our method can be solely supervised on a set of real
+                                    images of the scene under a single unknown lighting condition. To disambiguate the
+                                    task during training, we tightly integrate a differentiable path tracer in the
+                                    training process and propose a combination of a synthesized OLAT and a real image
+                                    loss. Results show that the recovered disentanglement of scene parameters improves
+                                    significantly over the current state of the art and, thus, also our re-rendering
+                                    results are more realistic and accurate.</p>
+                            </details>
+                            <ul class="actions small">
+                                <li><a href="https://people.mpi-inf.mpg.de/~llyu/projects/2022-NRTF/data/paper.pdf"
+                                        class="button small">PDF</a></li>
+                                <li><a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2022-NRTF/index.htm"
+                                        class="button small">Project Page</a></li>
+                                <li><a href="https://arxiv.org/abs/2207.13607" class="button small">arXiv</a></li>
+                                <li><a href="https://github.com/LinjieLyu/NRTF" class="button small">Code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="major" />
+
+                    <!-- Efficient and Differentiable Shadow -->
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/publications/teaserdiffshadow.png" alt="" /></span>
+                        </div>
+                        <div class="col-8 col-12-small">
+                            <h3>Efficient and Differentiable Shadow Computation for Inverse Problems</h3>
+                            <p>
+                                <strong>Linjie Lyu</strong>, Marc Habermann, Lingjie Liu, Mallikarjun B R, Ayush Tewari,
+                                Christian Theobalt<br />
+                                <em>ICCV 2021</em>
+                            </p>
+                            <details>
+                                <summary>Abstract</summary>
+                                <p>Differentiable rendering has received increasing interest for image-based inverse
+                                    problems. It can benefit traditional optimization-based solutions to inverse
+                                    problems, but also allows for self-supervision of learning-based approaches for
+                                    which training data with ground truth annotation is hard to obtain. However,
+                                    existing differentiable renderers either do not model visibility of the light
+                                    sources from the different points in the scene, responsible for shadows in the
+                                    images, or are too slow for being used to train deep architectures over thousands of
+                                    iterations. To this end, we propose an accurate yet efficient approach for
+                                    differentiable visibility and soft shadow computation. Our approach is based on the
+                                    spherical harmonics approximations of the scene illumination and visibility, where
+                                    the occluding surface is approximated with spheres. This allows for a significantly
+                                    more efficient shadow computation compared to methods based on ray tracing. As our
+                                    formulation is differentiable, it can be used to solve inverse problems such as
+                                    texture, illumination, rigid pose, and geometric deformation recovery from images
+                                    using analysis-by-synthesis optimization.</p>
+                            </details>
+                            <ul class="actions small">
+                                <li><a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2021-diffshadow/data/paper.pdf"
+                                        class="button small">PDF</a></li>
+                                <li><a href="https://people.mpi-inf.mpg.de/~mhaberma/projects/2021-diffshadow/"
+                                        class="button small">Project Page</a></li>
+                                <li><a href="http://arxiv.org/abs/2104.00359" class="button small">arXiv</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="major" />
+
+                    <!-- GVV Differentiable Renderer -->
+                    <div class="row">
+                        <div class="col-4 col-12-small">
+                            <span class="image fit"><img src="images/publications/teaserRender.png" alt="" /></span>
+                        </div>
+                        <div class="col-8 col-12-small">
+                            <h3>Differentiable Rendering Tool</h3>
+                            <p>
+                                Marc Habermann, Mallikarjun B R, Ayush Tewari, <strong>Linjie Lyu</strong>, Christian
+                                Theobalt<br />
+                                <em>GitHub</em>
+                            </p>
+                            <details>
+                                <summary>Abstract</summary>
+                                <p>This is a simple and efficient differentiable rasterization-based renderer which has
+                                    been used in several GVV publications. The implementation is free of most
+                                    third-party libraries such as OpenGL. The core implementation is in CUDA and C++. We
+                                    use the layer as a custom Tensorflow op. Features include: shading based on
+                                    spherical harmonics, various visualizations (normals, UVs, phong-shaded), texture
+                                    map lookups, and multi-view rendering in a single batch.</p>
+                            </details>
+                            <ul class="actions small">
+                                <li><a href="https://github.com/aytewari/GVV-Differentiable-CUDA-Renderer"
+                                        class="button small">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+
+                <!-- Search -->
+                <section id="search" class="alt">
+                    <form method="post" action="#">
+                        <input type="text" name="query" id="query" placeholder="Search" />
+                    </form>
+                </section>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                    <p>Feel free to reach out for collaborations or opportunities.</p>
+                    <ul class="contact">
+                        <li class="icon solid fa-envelope"><a href="mailto:llyu@mpi-inf.mpg.de">llyu@mpi-inf.mpg.de</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Linjie Lyu. All rights reserved. Design: <a
+                            href="https://html5up.net">HTML5 UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
